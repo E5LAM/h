@@ -9,7 +9,7 @@
     <!-- DNS Prefetech -->
     <b:include name='DNSPrefetech'/>
     <!-- Title -->
-    <!-- <title><b:if cond='data:view.isError'><data:blog.title/></b:if><b:if cond='data:view.isMultipleItems'><b:if cond='data:view.isHomepage'><data:blog.title/><b:else/><data:blog.pageTitle.escaped/></b:if><b:elseif cond='data:view.isSingleItem'/><data:view.title.escaped/></b:if></title> -->
+    <title><b:if cond='data:view.isError'><data:blog.title/></b:if><b:if cond='data:view.isMultipleItems'><b:if cond='data:view.isHomepage'><data:blog.title/><b:else/><data:blog.pageTitle.escaped/></b:if><b:elseif cond='data:view.isSingleItem'/><data:view.title.escaped/></b:if></title>
     <!-- Open Graph -->
     <b:include name='OpenGraph'/>
     <!-- Twitter Card -->
@@ -26,7 +26,7 @@
 -> Homepage: https://cot12a.blogspot.com/
 -> Version : 1.0
 -> Updated : 10.3.2023 
-*//*=================*/
+*//*=================
 >Variables
 ===================
 <Group description="ألاعدادات ألاساسية" selector="body">
@@ -1829,6 +1829,7 @@ var _0xf9a6=["\x6F\x6E\x6C\x6F\x61\x64","\x63\x72\x65\x64\x69\x74","\x67\x65\x74
     </b:tag>
 
     <style>
+    
       #LinkList001 {overflow: unset!important;}
 
       /* cookie-choices */
@@ -2218,6 +2219,7 @@ box-shadow: 0 0 33px #ffffff;
 }
         .HeaderBOT #menu ul li:hover &gt; .inline-icon,.HeaderBOT #menu ul a.selected .inline-icon,.HeaderBOT #menu ul a:hover .inline-icon{fill:var(--hoverColor)}
         .HeaderBOT #menu ul a{font:var(--HLinkfont);color:#ffffff}
+        
         <b:if cond='data:skin.vars.Style2Headr == &quot;1px&quot;'>
           .HeaderTOP{transition:all .3s linear;display:block;width:100%;clear:both;height:35px;position:absolute;top:0;right:0;left:0;max-width:var(--maxWidth);margin:0 auto}
           .HeaderBOT{transition:all .3s linear;display:block;clear:both;position:absolute;top:35px;right:0;left:0;width:100%;position:relative}
@@ -2304,7 +2306,6 @@ box-shadow: 0 0 33px #ffffff;
     <b:if cond='data:blog.adsenseClientId'>&lt;!--</b:if>&lt;/head&gt;&lt;!--</head><b:if cond='!data:blog.adsenseClientId'>--&gt;</b:if>
 
   <body expr:class='data:blog.languageDirection' expr:data-id='data:blog.blogId'>
- 
    <b:class cond='data:view.isHomepage' name='home'/>
     <b:class cond='data:view.isSingleItem' name='post'/>
     <b:class cond='data:view.isMultipleItems' name='lapel'/>
@@ -3745,6 +3746,6 @@ l1l.querySelector("a").setAttribute("href", "?page=" + lII), l11.querySelector("
     <b:if cond='!data:view.isLayoutMode'><b:include name='customeAnalytics'/></b:if>
         <script async='async' src='https://platform-api.sharethis.com/js/sharethis.js#property=6483448e8bdd800012e15fc2&amp;product=inline-reaction-buttons' type='text/javascript'/>
 
-    &lt;noscript id=&#39;blogger-components&#39;&gt;&lt;/noscript&gt;&lt;/body&gt;
-  </body>
+    &lt;noscript id=&#39;blogger-components&#39;&gt;</body>&lt;/noscript&gt;&lt;/body&gt;
+  
 </html>
